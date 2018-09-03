@@ -1,16 +1,26 @@
 <h1>Emp det</h1>
+<img [src]="imgPath"/>
 <table>
     <tr>
+        <td [attr.colspan] = "colspan">
+            Employee Details
+        </td>
+    </tr> 
+    <tr>
         <td>First Name</td>
-        <td>{{firstname}}</td>
+        <td [innerHtml]="firstname"></td>
     </tr>
     <tr>
         <td>Last Name</td>
         <td>{{LastNamme}}</td>
     </tr>
     <tr>
+        <td>Full Name</td>
+        <td>{{empName()}}</td>
+    </tr>
+    <tr>
         <td>Salary</td>
-        <td>{{salary}}</td>
+        <td>{{500 * 12}}</td>
     </tr>
     <tr>
         <td>Department</td>
