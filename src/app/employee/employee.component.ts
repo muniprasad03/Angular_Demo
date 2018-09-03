@@ -11,7 +11,11 @@ export class EmployeeComponent {
     LastNamme: string= 'Muni';
     salary:number =10000;
     department: string ='software';
+    textcolor:string = 'green';
+    colspan: number = 3 ;
     imgPath: string ="https://angular.io/assets/images/logos/angular/logo-nav@2x.png";
+    classtouse: string = 'class1';
+
     empName(): string{
         return this.firstname + ' ' + this.LastNamme;
     }

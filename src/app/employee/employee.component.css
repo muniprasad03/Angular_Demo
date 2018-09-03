@@ -1,3 +1,10 @@
 table{
     color: red;
 }
+h1{
+    color: green;
+}
+.class1{
+    color: blue;
+    background-color: yellow;
+}
