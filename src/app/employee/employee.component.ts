@@ -3,12 +3,12 @@ import {Component } from '@angular/core';
 @Component({
     selector: 'employee',
     templateUrl: 'app/employee/employee.component.html',
-    styleUrls: ['app/employee/employee.components.css']
+    styles: ['h1{color: red;}']
 })
 
 export class EmployeeComponent {
     firstname : string = 'Prasad';
-    LastNamme: string= 'muni';
+    LastNamme: string= 'Muni';
     salary:number =10000;
     department: string ='software';
     empName(): string{
