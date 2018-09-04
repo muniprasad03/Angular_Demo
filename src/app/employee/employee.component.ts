@@ -15,8 +15,15 @@ export class EmployeeComponent {
     colspan: number = 3 ;
     imgPath: string ="https://angular.io/assets/images/logos/angular/logo-nav@2x.png";
     classtouse: string = 'class1';
-
+    showdetails: boolean = false;
+    btntxt: string = "Show Details";
+    buttonclick(): void {
+        this.showdetails = !this.showdetails;
+        this.btntxt = this.showdetails ==  true? "Hide Details": "Show Details";
+    }
     empName(): string{
         return this.firstname + ' ' + this.LastNamme;
     }
+
+   
 }

@@ -1,6 +1,9 @@
 <h1>Emp det</h1>
-<img [src]="imgPath"/>
-<table [class] = "classtouse" >
+<button (click) = "buttonclick()">
+{{btntxt}}
+</button>
+<br/><br/>
+<table *ngIf="showdetails" [class] = "classtouse" >
     <tr>
         <td [attr.colspan] = "colspan">
             Employee Details
@@ -27,3 +30,5 @@
         <td>{{department}}</td>
     </tr>
 </table>
+<br/>
+<img [src]="imgPath"/>
